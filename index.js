@@ -3,6 +3,7 @@ const ffmpegInstaller = require("@ffmpeg-installer/ffmpeg");
 const fs = require("fs");
 const path = require("path");
 const random = require("randomstring");
+var isValid = require("is-valid-path");
 
 ffmpeg.setFfmpegPath(ffmpegInstaller.path);
 
@@ -109,6 +110,14 @@ ipcMain.on("create-project", async (event) => {
 ipcMain.on("convert-video", async (event, ...args) => {
   outputDir = args[0];
   videoName = args[1];
+
+  if (!isValid(outputDir)) {
+    convertWindow.webContents.send(
+      "error",
+      "Error occured. Please enter a valid output directory name"
+    );
+    return;
+  }
 
   try {
     fs.mkdirSync(outputDir);

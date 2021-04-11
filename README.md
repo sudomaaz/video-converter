@@ -2,5 +2,5 @@ This project is used to convert .mp4 files to HLS format. The app is based on el
 
 To start the electron app type following 2 commands:
 
-npm install
-npm start
+1. npm install
+2. npm start

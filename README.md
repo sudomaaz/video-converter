@@ -6,8 +6,6 @@ This is a simple Electron Application to convert Media file from MP4 to HLS form
 
 ## To Use
 
-1. Install
-
 ```bash
 # Clone this repository
 git clone https://github.com/sudomaaz/video-converter

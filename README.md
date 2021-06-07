@@ -14,3 +14,7 @@ npm install
 # Run the app
 npm start
 ```
+
+## Screenshot
+
+![Alt text](vc.gif?raw=true "Video Converter app")

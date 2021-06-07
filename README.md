@@ -1,6 +1,18 @@
-This project is used to convert .mp4 files to HLS format. The app is based on electronJS and NodeJS.
+# Video Converter App Using Electron
 
-To start the electron app type following 2 commands:
+**Built as a hackthon project and got rank 2**
 
-1. npm install
-2. npm start
+This is a simple Electron Application to convert Media file from MP4 to HLS format (used for web streams) using the all famous ffmpeg module.
+
+## To Use
+
+1. Install
+
+```bash
+# Clone this repository
+git clone https://github.com/sudomaaz/video-converter
+# Install dependencies
+npm install
+# Run the app
+npm start
+```
